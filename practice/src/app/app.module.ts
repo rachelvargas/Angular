@@ -7,11 +7,28 @@ import { AppComponent } from './app.component';
 import { WarningAlertComonent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 
+import { HeaderComponent } from './header/header.component';
+import { ScripturesComponent } from './scriptures/scriptures.component';
+import { ScriptureListComponent } from './scriptures/scripture-list/scripture-list.component';
+import { ScriptureMasteryComponent } from './scriptures/scripture-mastery/scripture-mastery.component';
+import { ScriptureItemComponent } from './scriptures/scripture-item/scripture-item.component';
+import { BookListComponent } from './book-list/book-list.component';
+import { BookEditComponent } from './book-list/book-edit/book-edit.component';
+import { ScriptureDetailComponent } from './scriptures/scripture-detail/scripture-detail.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     WarningAlertComonent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    ScripturesComponent,
+    ScriptureListComponent,
+    ScriptureMasteryComponent,
+    ScriptureItemComponent,
+    BookListComponent,
+    BookEditComponent,
+    ScriptureDetailComponent
   ],
   imports: [
     BrowserModule,
