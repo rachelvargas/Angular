@@ -15,6 +15,9 @@ import { ScriptureItemComponent } from './scriptures/scripture-item/scripture-it
 import { BookListComponent } from './book-list/book-list.component';
 import { BookEditComponent } from './book-list/book-edit/book-edit.component';
 import { ScriptureDetailComponent } from './scriptures/scripture-detail/scripture-detail.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { ScriptureDetailComponent } from './scriptures/scripture-detail/scriptur
     ScriptureItemComponent,
     BookListComponent,
     BookEditComponent,
-    ScriptureDetailComponent
+    ScriptureDetailComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
