@@ -9,15 +9,19 @@ import { Book } from '../shared/book.model';
 })
 export class BookListComponent implements OnInit{
   books: Book[] = [
-    new Book('Book of Mormon', 3),
-    new Book('Bible', 2),
-    new Book('Doctrine and Covenants', 2)
+    new Book('Book of Mormon', 3)
+    //new Book('Bible', 2),
+    //new Book('Doctrine and Covenants', 2)
   ];
 
   constructor(){}
 
   ngOnInit(){
 
+  }
+
+  onBookAdded(book: Book ) {
+    this.books.push(book);
   }
 
 }

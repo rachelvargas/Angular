@@ -4,29 +4,11 @@
     </div>
 </div>
 <hr>
-<!--<div class="row">
-   <div class="col-md-7">
-    <app-scripture-mastery></app-scripture-mastery>
-   </div>
-</div>-->
 <div class="row">
-    <div class="col-xs-12">
-        <a 
-        href="#" class="list-group-item clearfix" 
-        *ngFor="let scripture of scriptures">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">{{ scripture.name }}</h4>
-                <p class="list-group-item-text">{{ scripture.description }}</p>
-            </div>
-            <span class="pull-right">
-                <img 
-                [src]="scripture.imagePath"
-                alt="{{scripture.name}}" 
-                class="img-responsive" 
-                style="max-height: 50px;">
-            </span>
-        </a>
-        <app-scripture-item></app-scripture-item>
-
+    <div class="col-xs-12">        
+        <app-scripture-item
+        *ngFor="let scriptureEl of scriptures"
+        [scripture]="scriptureEl"
+        (scriptureSelected)="onScriptureSelected(scriptureEl)"></app-scripture-item>
     </div>
 </div>

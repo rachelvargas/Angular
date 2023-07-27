@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Scripture } from '../scripture.model';
 
 @Component({
@@ -7,10 +7,13 @@ import { Scripture } from '../scripture.model';
   styleUrls: ['./scripture-list.component.css']
 })
 export class ScriptureListComponent implements OnInit{
+  @Output() scriptureWasSelected = new EventEmitter<Scripture>();
+
+
   scriptures: Scripture[] = [
     new Scripture('A Test Scripture', 'This is a simply test', 
     'https://cdn.pixabay.com/photo/2016/03/31/18/27/book-1294379_960_720.png'),
-    new Scripture('A Test Scripture', 'This is a simply test', 
+    new Scripture('Another Test Scripture', 'This is a simply test', 
     'https://cdn.pixabay.com/photo/2016/03/31/18/27/book-1294379_960_720.png')
   ];
 
@@ -19,6 +22,10 @@ export class ScriptureListComponent implements OnInit{
   }
 
   ngOnInit(){
+
+  }
+  onScriptureSelected(scripture: Scripture){
+    this.scriptureWasSelected.emit(scripture);
 
   }
 
