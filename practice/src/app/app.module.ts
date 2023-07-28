@@ -19,6 +19,8 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    DropdownDirective
+    DropdownDirective,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
