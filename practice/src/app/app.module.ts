@@ -18,6 +18,7 @@ import { ScriptureDetailComponent } from './scriptures/scripture-detail/scriptur
 import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EvenComponent } from './even/even.component';
     ScriptureDetailComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
